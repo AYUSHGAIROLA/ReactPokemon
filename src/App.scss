@@ -1,0 +1,88 @@
+.pokemon-edit-component-container {
+    // background-color: red;
+
+    .pokemon-edit-all-fields-container {
+        margin: 15%;
+        background-color: mix(lightblue, white, 55%);
+        padding: 1rem;
+        border-radius: 1rem;
+
+        .pokemon-label {
+            width: 4rem;
+            float: left;
+            text-align: end;
+            line-height: 2.4rem;
+
+            &::after {
+                content: " :";
+            }
+        }
+
+        .pokemon-content {
+            width: calc(100% - 4rem);
+            float: left;
+        }
+
+        .pokemon-edit-footer-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+
+.pokemon-header-component-container {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+
+    .pokemon-header-home-icon-container {
+        .pokemon-logo {
+            width: 140px;
+            height: 40px;
+            padding: 0rem 0.5rem;
+        }
+    }
+
+    .pokemon-header-add-icon-container {
+        font-size: 2rem;
+
+        &:hover {
+            font-size: 2.1rem;
+        }
+
+        color: mix(lightblue, white, 5%);
+    }
+
+
+
+}
+
+.pokemon-row {
+    &::before {
+        display: table;
+        content: " ";
+    }
+
+    &::after {
+        clear: both;
+        display: table;
+        content: " ";
+    }
+
+}
+
+.pokemon-card-container {
+    display: inline-block;
+
+    .pokemon-card-content-container {
+        background-color: lightgray;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+        border: 1px solid darkgray;
+    }
+}
